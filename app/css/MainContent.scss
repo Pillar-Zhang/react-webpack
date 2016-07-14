@@ -1,0 +1,23 @@
+.main{
+	position: fixed;
+	top:70px;
+	width: 63%;
+	height: 800px;
+	overflow-y: auto;
+	overflow-y:hidden;
+	height: calc(100% + 60px);
+	will-change: transform;
+	margin-left: 18.5%;
+}
+.title{
+	font-size:26px;
+	font-weight: 600px !important;
+	margin-left:20px; 
+}
+.content{
+	margin-left: 20px;
+}
+
+.iframesize{
+	margin-left:10px;
+}

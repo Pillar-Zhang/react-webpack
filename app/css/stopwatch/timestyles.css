@@ -1,0 +1,179 @@
+
+/*-----------------------
+	Clocks General
+-----------------------*/
+
+.container {
+	position: fixed;	
+	right: 15px;
+	margin-left:60%; 
+	max-width: none; 
+}
+
+.container1 {
+	position: fixed;
+	top: 130px;
+	margin-right: 10px;
+
+}
+
+form{
+	width: 20%;
+	height: 50px;
+	padding: 10px;
+	margin-top: 80px; 
+	color: #0277BD;
+	border-radius: 2px;
+
+}
+
+form a{
+	margin: 0 5px;
+	float: left;
+}
+
+.control{
+	display: inline-block;
+	width: 130px;
+	vertical-align: middle;
+}
+
+.input-field{
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.checkbox{
+	padding-left: 20px;
+}
+
+.clock {
+	height: 30px;
+	width: 100px;
+	display: block;
+	margin-top: 20px;
+	margin-right: -15px;
+	font-size: 26px;
+	color: #0091ea;
+	text-align: center;
+	line-height: 26px;
+	background-color: #fff;
+	border-radius: 2px;
+	transition: all 0.4s ease-in, box-shadow 0.2s;
+	padding-bottom: 3px;
+}
+
+.clock.inactive {
+	color: #757575;
+}
+
+.clock .overlay{
+	position: absolute;
+	top:0;
+	left:0;
+	background-color:#a1887f; 
+	
+}
+
+.switch label .lever:after{
+	background-color:#fff;
+}
+
+
+/*-----------------------
+	Alarm
+-----------------------*/
+
+#alarm-input {
+	font-size: 20px;
+	text-align: center;
+}
+
+.switch{
+	display: inline-block;
+}
+
+/*-----------------------
+	Stopwatch
+-----------------------*/
+
+.stopwatch form {
+	padding: 0;
+	line-height: 20px;
+}
+
+.stopwatch form a{
+	color: #0059bc;
+	display: inline-block;
+	float: left;
+	
+}
+
+.stopwatch .clock{
+	width: 140px;
+}
+
+/*-----------------------
+	Timer
+-----------------------*/
+
+#timer-input {
+	font-size: 32px;
+	text-align: center;
+}
+
+.timer-btn{
+	font-size: 32px;
+	cursor: pointer;
+}
+
+/*-----------------------
+	Modals
+-----------------------*/
+
+.modal{
+	width: 40%;
+}
+
+.dismiss-alarm-sounds{
+	float:none !important;
+}
+
+/*-----------------------
+	Responsiveness
+-----------------------*/
+
+@media (max-width: 800px){
+
+	.switch-clocks a{
+		padding: 20px;
+	}
+
+	form{
+		height: auto;
+		padding: 10px;
+		margin: 10px auto;
+	}
+
+	.checkbox{
+		padding-left: 0;
+		display: none;
+	}
+
+	.clock{
+		font-size: 60px;
+		height: 180px;
+		line-height: 180px;
+		margin-top:20px;
+	}
+
+	.stopwatch form a{
+		padding: 0 1rem;
+	}
+
+	.modal{
+		width: 80%;
+	}
+
+}
+

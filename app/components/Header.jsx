@@ -1,9 +1,5 @@
-import React,{ Component } from 'react';
-import Title from './Title.jsx';
-import Handle from './Handle.jsx';
-import Tags from './Tags.jsx';
-import headerStyle from '../css/HeaderStyle.scss';
-
+import React from 'react';
+import '../css/HeaderStyle.scss';
 
 class Header extends React.Component {
     constructor(props) {
@@ -11,27 +7,14 @@ class Header extends React.Component {
         this.displayName = 'Header';
     }
     render() {
-        return( 
-             <div>   
-     <div className="row">
-    
-    <div className="col m8 headerLeft">
-        <Title promise={$.getJSON('http://192.168.1.130:8080/hifoxlab/tools/1')} />
-        <Tags />
-
-    </div>
-    <div className="col m4 headerRight btnsize">
-        <Handle />
-    </div>
-  </div>
-
-        </div>
-        );
-
-
-
+        return (
+    <header className="header z-depth-1">
+	        <i className="material-icons">keyboard_arrow_left</i>
+	        <a href="#" className="return">返回</a>
+	        <b className="desing">DESIGN THINKING</b>
+        
+    </header>)
     }
 }
-
 
 export default Header;

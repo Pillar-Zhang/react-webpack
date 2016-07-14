@@ -9,9 +9,7 @@ import 'materialize/css/materialize.min.css';
 import 'materialize/js/materialize.min.js';
 import 'materialize-tags/dist/js/materialize-tags.min.js';
 import 'materialize-tags/dist/css/materialize-tags.min.css';
-
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import CardExampleWithoutAvatar from './components/CardExampleWithoutAvatar.jsx';
 import Main from './components/Main.jsx';
 
 injectTapEventPlugin();
