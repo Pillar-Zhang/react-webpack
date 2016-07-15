@@ -4,7 +4,7 @@
 	width: 63%;
 	height: 800px;
 	overflow-y: auto;
-	overflow-y:hidden;
+	
 	height: calc(100% + 60px);
 	will-change: transform;
 	margin-left: 18.5%;
@@ -20,4 +20,8 @@
 
 .iframesize{
 	margin-left:10px;
+}
+
+.main-nody{
+	padding:100px 10px;
 }

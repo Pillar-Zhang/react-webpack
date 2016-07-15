@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/MainContent.scss';
+import showdown from '../js/showdown.js'
 
 
 
@@ -8,24 +9,21 @@ class MainContent extends React.Component {
     constructor(props) {
         super(props);
         this.displayName = 'MainContent';
+        this.state = {content:""}
+        let converter = new showdown.Converter();
+
+        fetch('md.md').then(res=>res.text()).then(text=>{
+            this.setState({content:converter.makeHtml(text)})
+            
+        })
     }
     render() {
         return (
-
-        		<div className="main z-depth-4">
-            <div className="row">
-                <div className="col m10">
-                    <h3 className="title">介绍城市故事</h3>
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe width ="830"  height="730" class="embed-responsive-item iframesize" src="http://materializecss.com/"></iframe>
-                    </div>
-                </div>
-                <div className="col m2">
-                
-                </div>
-            </div>
+    <div className="main">
+        <div dangerouslySetInnerHTML={{__html:this.state.content}} className="main-nody z-depth-4">
+          
         </div>
-
+    </div>
 
         	)
     }

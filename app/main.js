@@ -9,6 +9,7 @@ import 'materialize/css/materialize.min.css';
 import 'materialize/js/materialize.min.js';
 import 'materialize-tags/dist/js/materialize-tags.min.js';
 import 'materialize-tags/dist/css/materialize-tags.min.css';
+import './js/index.js'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Main from './components/Main.jsx';
 
