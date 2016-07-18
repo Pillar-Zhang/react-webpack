@@ -5030,7 +5030,7 @@ a.waves-effect .waves-ripple {
     max-height: 70%;
     width: 55%;
     margin: auto;
-    overflow-y: auto;
+    overflow-y: none;
     border-radius: 2px;
     will-change: top, opacity
 }

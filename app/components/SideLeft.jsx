@@ -7,17 +7,18 @@ class SideLeft extends React.Component {
         super(props);
         this.displayName = 'SideLeft';
     }
+    
     render() {
         return (
         <div className="side-left">
             <ul id="nav-mobile" className="side-nav z-depth-2 fixed" style={{transform: 'translateX(0%)'}}>
-                <li className="bold"><a href="#" className="waves-effect waves-teal"><b>INITATION </b><b>启蒙</b></a></li>
-                <li className="bold active"><a href="#" className="waves-effect waves-teal"><b>工具1</b></a></li>
-                <li className="bold"><a href="#" className="waves-effect waves-teal"><b>工具2</b></a></li>
-                <li className="bold"><a href="#" className="waves-effect waves-teal"><b>工具3</b></a></li>
-                <li className="bold"><a href="#" className="waves-effect waves-teal"><b>INSPIRATION </b><b>灵感</b></a></li>
-                <li className="bold"><a href="#" className="waves-effect waves-teal"><b>IDEATION </b><b>构思</b></a></li>
-                <li className="bold"><a href="#" className="waves-effect waves-teal"><b>IMPATION </b><b>实现</b></a></li>
+                <li className="bold"><a href="#" className="waves-effect Default"><b>INITATION </b><b>启蒙</b></a></li>
+                <li className="bold"><a href="#" className="waves-effect Default"><b>工具1</b></a></li>
+                <li className="bold"><a href="#" className="waves-effect Default"><b>工具2</b></a></li>
+                <li className="bold"><a href="#" className="waves-effect Default"><b>工具3</b></a></li>
+                <li className="bold"><a href="#" className="waves-effect Default"><b>INSPIRATION </b><b>灵感</b></a></li>
+                <li className="bold"><a href="#" className="waves-effect Default"><b>IDEATION </b><b>构思</b></a></li>
+                <li className="bold"><a href="#" className="waves-effect Default"><b>IMPATION </b><b>实现</b></a></li>
             </ul>
         </div>
 

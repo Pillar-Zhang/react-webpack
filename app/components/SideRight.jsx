@@ -6,19 +6,23 @@ class SideRight extends React.Component {
         super(props);
         this.displayName = 'SideRight';
     }
+    imgonclick(){
+
+                $('#modal1').openModal(); 
+    }
     render() {
         return (
         	<div className="side-right">
 	          <ul id="nav-right" className="side-nav z-depth-2 fixed right-aligned">
 	            <li>
 	                <h5>课程课件</h5></li>
-				<li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" /><span>1.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" /><span>2.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" /><span>3.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" /><span>4.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" /><span>5.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" /><span>6.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" /><span>7.</span></li>
+				<li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>1.</span></li>
+	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>2.</span></li>
+	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>3.</span></li>
+	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>4.</span></li>
+	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>5.</span></li>
+	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>6.</span></li>
+	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>7.</span></li>
 	          </ul>
 
 
@@ -32,9 +36,6 @@ class SideRight extends React.Component {
 			</div>
 
 			</div>
-
-
-			
 
 
         	)
