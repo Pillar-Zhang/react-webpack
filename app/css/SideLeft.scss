@@ -1,4 +1,34 @@
 .side-nav{
 	top: 70px;
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
+	width:18%;
+	span{
+		font-size: 12px;
+	}
+		
+}
+
+.side-left{
+	span{
+		display: inline-block;
+		font-size:12px;
+	}
+}
+
+.spanpadleft{
+	padding-left:30px;
+}
+
+
+
+.side-nav a {
+    line-height: 24px;
+}
+
+.alineheight{
+	line-height: 64px;
+	font-size:24px;
+}
+.awidth{
+	width:80px;
 }

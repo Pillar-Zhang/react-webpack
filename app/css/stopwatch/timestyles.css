@@ -5,8 +5,8 @@
 
 .container {
 	position: fixed;	
-	right: 15px;
-	margin-left:60%; 
+	right: 20%;
+	top:85px; 
 	max-width: none; 
 }
 

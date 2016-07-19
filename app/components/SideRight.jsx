@@ -14,15 +14,15 @@ class SideRight extends React.Component {
         return (
         	<div className="side-right">
 	          <ul id="nav-right" className="side-nav z-depth-2 fixed right-aligned">
-	            <li>
-	                <h5>课程课件</h5></li>
-				<li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>1.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>2.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>3.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>4.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>5.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>6.</span></li>
-	            <li className="bold"><img className="modalimg" width="160" src="./images/sample-1.jpg" onClick={e=>this.imgonclick()}/><span>7.</span></li>
+	            <li><h5>课程课件</h5></li>
+				<li className="bold"><img className="modalimg" width="140" src="./images/1.png" onClick={e=>this.imgonclick()}/><span>1.</span></li>
+	            <li className="bold"><img className="modalimg" width="140" src="./images/2.png" onClick={e=>this.imgonclick()}/><span>2.</span></li>
+	            <li className="bold"><img className="modalimg" width="140" src="./images/3.png" onClick={e=>this.imgonclick()}/><span>3.</span></li>
+	            <li className="bold"><img className="modalimg" width="140" src="./images/4.png" onClick={e=>this.imgonclick()}/><span>4.</span></li>
+	            <li className="bold"><img className="modalimg" width="140" src="./images/5.png" onClick={e=>this.imgonclick()}/><span>5.</span></li>
+	            <li className="bold"><img className="modalimg" width="140" src="./images/6.png" onClick={e=>this.imgonclick()}/><span>6.</span></li>
+	            <li className="bold"><img className="modalimg" width="140" src="./images/7.png" onClick={e=>this.imgonclick()}/><span>7.</span></li>
+	            <li className="bold"><img className="modalimg" width="140" src="./images/8.png" onClick={e=>this.imgonclick()}/><span>8.</span></li>
 	          </ul>
 
 
