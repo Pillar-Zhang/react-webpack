@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/MainContent.scss';
-import showdown from '../js/showdown.js'
+import showdown from '../js/showdown.js';
+import {md} from '../js/md.js';
 
 
 
@@ -10,13 +11,17 @@ class MainContent extends React.Component {
         super(props);
         this.displayName = 'MainContent';
         this.state = {content:""}
-        let converter = new showdown.Converter();
+        
 
-        fetch('md.md').then(res=>res.text()).then(text=>{
-            this.setState({content:converter.makeHtml(text)})
-            
-        })
     }
+    componentWillMount() {
+        
+             let converter = new showdown.Converter();
+            this.setState({content:converter.makeHtml(md)})
+            
+        }
+
+
     render() {
         return (
     <div className="main">

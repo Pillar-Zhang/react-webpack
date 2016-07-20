@@ -9,7 +9,7 @@ class SwitchChapter extends React.Component {
     render() {
         return (
         			<div className="switchchapter">
-        				<a className="waves-effect  waves-light btn"><i className="mdi-file-cloud left"></i>上一章</a>
+        				<a className="waves-effect  waves-light btn "><i className="mdi-file-cloud left"></i>上一章</a>
   						<a className="waves-effect  waves-light btn"><i className="mdi-file-cloud right"></i>下一章</a>
         			</div>
 

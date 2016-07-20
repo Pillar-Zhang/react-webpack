@@ -8,12 +8,19 @@ class SideRight extends React.Component {
     }
     imgonclick(){
 
-                $('#modal1').openModal(); 
+                // $('#modal1').openModal(); 
+                window.webkit.messageHandlers.PlaylocalPhoto.postMessage("1.png");
+                console.log('OK');
+    }
+    modalonclick(){
+    			
+                window.webkit.messageHandlers.PlaylocalPhoto.postMessage("1.png");
+                
     }
     render() {
         return (
         	<div className="side-right">
-	          <ul id="nav-right" className="side-nav z-depth-2 fixed right-aligned">
+	          <ul id="nav-right" className="side-nav z-depth-2 fixed navimgright">
 	            <li><h5>课程课件</h5></li>
 				<li className="bold"><img className="modalimg" width="140" src="./images/1.png" onClick={e=>this.imgonclick()}/><span>1.</span></li>
 	            <li className="bold"><img className="modalimg" width="140" src="./images/2.png" onClick={e=>this.imgonclick()}/><span>2.</span></li>
@@ -30,8 +37,7 @@ class SideRight extends React.Component {
 			    <div className="modal-content">
 			      <h4>提示</h4>
 			      <p>你要投放出去么？</p>
-			      <a href="#!" className=" modal-action modal-close waves-effect waves-green btn-flat">同意</a>
-			      <a href="#!" className=" modal-action modal-close waves-effect waves-red btn-flat">不，谢谢</a>
+			      <a href="#!" className=" modal-action modal-close waves-effect waves-green btn-flat" onClick={e=>this.modalonclick()}>投放</a>
 			    </div>
 			</div>
 

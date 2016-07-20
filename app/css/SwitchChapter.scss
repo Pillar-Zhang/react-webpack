@@ -5,4 +5,23 @@
 	bottom:45px;
 	right:16.5%;
 	font-color:#212121;
+	font-color:black;
+}
+
+.btn, .btn-large {
+    text-decoration: none;
+    color: #000;
+    background-color: #ffffff;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+a:focus, a:hover {
+    color: #008aff;
+    text-decoration: underline;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #d2d2d2;
 }

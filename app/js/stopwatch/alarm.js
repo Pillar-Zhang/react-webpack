@@ -4,8 +4,8 @@ var alarmSound = new Audio('assets/06_Urban_Beat.mp3');
 alarmSound.volume = 0.3;
 
 
-var alarmInterval = 0,      // Our setInterval variable for controlling the loop.
-    alarmTime = 0;          // The time the alarm is set to.
+var alarmInterval = 0, // Our setInterval variable for controlling the loop.
+    alarmTime = 0; // The time the alarm is set to.
 
 var alarmClock = $('.container.alarm').find('.clock'),
     alarmInput = $('#alarm-input'),

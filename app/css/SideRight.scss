@@ -1,9 +1,10 @@
 .side-nav{
-	top: 70px;
+	top: 20px;
 	padding-bottom: 200px;
+	width:19%;
 	
 	img{
-	margin: 20px 14px 20px 3px ;
+	margin: 20px 25px 20px 2px ;
 	border:6px solid grey;
 	display: inline !important;
 	float: right;
@@ -17,7 +18,7 @@
 	span{
 	margin-left: 5px;
 	display: inline;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 300 !important;
 	float: left;
 }
@@ -58,4 +59,24 @@
 
 .modal{
 	overflow-y:none !important;
+}
+
+
+@media only screen and (max-width: 992px){
+
+.navimgright{
+	margin-left:101%
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 1000px){
+
+.navimgright{
+	margin-left:82%;
+}
+
 }

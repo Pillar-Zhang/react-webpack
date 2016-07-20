@@ -12,7 +12,7 @@ class SideLeft extends React.Component {
         return (
         <div className="side-left">
             <ul id="nav-mobile" className="side-nav z-depth-2 fixed" style={{transform: 'translateX(0%)'}}>
-                <li className="bold"><a href="#" className="waves-effect Default"><span className="awidth">INITATION</span><span className="spanpadleft"><b>启蒙</b></span></a></li>
+                <li className="bold navleftpadingtop"><a href="#" className="waves-effect Default"><span className="awidth">INITATION</span><span className="spanpadleft"><b>启蒙</b></span></a></li>
                 <li className="bold"><a href="#" className="waves-effect Default"><span className="spanpadleft alineheight"><b>章节一</b></span></a></li>
                 <li className="bold"><a href="#" className="waves-effect Default"><span className="spanpadleft alineheight"><b>章节二</b></span></a></li>
                 <li className="bold"><a href="#" className="waves-effect Default"><span className="spanpadleft alineheight"><b>章节三</b></span></a></li>
