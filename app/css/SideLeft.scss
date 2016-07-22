@@ -1,38 +1,20 @@
-.side-nav{
-	top: 20px;
-	margin-bottom: 50px;
-	width:18%;
-	span{
-		font-size: 12px;
-	}
-		
+
+.sidebar {
+    width: 15%;
+    position: fixed;
+    box-shadow: 2px 2px 2px #ddd;
+    height: 100%;
+    background-color: #fff;
+    z-index: 998;
+    top:35%;
+    text-align: center;
+    line-height: 50px;
 }
 
-.side-left{
-	span{
-		display: inline-block;
-		font-size:12px;
-	}
+.sidebar a{
+	color: #000000;
 }
 
-.spanpadleft{
-	padding-left:30px;
-}
-
-
-
-.side-nav a {
-    line-height: 24px;
-}
-
-.alineheight{
-	line-height: 64px;
-	font-size:24px;
-}
-.awidth{
-	width:80px;
-}
-
-.navleftpadingtop{
-	padding-top:30px;
+a:focus, a:hover {
+    color: #0083ff;
 }

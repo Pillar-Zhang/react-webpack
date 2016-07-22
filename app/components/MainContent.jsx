@@ -25,8 +25,9 @@ class MainContent extends React.Component {
     render() {
         return (
     <div className="main">
-        <div dangerouslySetInnerHTML={{__html:this.state.content}} className="main-nody z-depth-4">
-          
+        
+            <div dangerouslySetInnerHTML={{__html:this.state.content}} className="main-nody z-depth-4 ">
+            
         </div>
     </div>
 
