@@ -4,11 +4,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: path.resolve(__dirname, 'app/main.js')
+        main: path.resolve(__dirname, 'app/main.js'),
+        MyCourseware: path.resolve(__dirname, 'app/MyCourseware.js')
+
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: '[name].js'
     },
     module: {
         loaders: [{
@@ -37,7 +39,15 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'app/template/index.html'
+            template: 'app/template/index.html',
+            chunks: ['main'],
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'MyCourseware.html',
+            template: 'app/template/MyCourseware.html',
+            chunks: ['MyCourseware'],
+            inject: 'body'
         }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.ProvidePlugin({
