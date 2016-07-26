@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import MyCoursewareImage from'./MyCoursewareComponent/MyCoursewareImage.jsx'
+import MyCoursewareText from'./MyCoursewareComponent/MyCoursewareText.jsx'
 
 class MyCourseware extends React.Component {
     constructor(props) {
@@ -10,6 +11,7 @@ class MyCourseware extends React.Component {
         return (
 			        <div>
 			        	<MyCoursewareImage />
+                        <MyCoursewareText />
 			        </div>
         )
     }

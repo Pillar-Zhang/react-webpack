@@ -13,7 +13,7 @@ import 'materialize/js/materialize.min.js';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 //jsx
 import MyCourseware from './components/MyCourseware.jsx';
-
+import './css/MyCourseware/MyCourseware.scss';
 injectTapEventPlugin();
 
 
